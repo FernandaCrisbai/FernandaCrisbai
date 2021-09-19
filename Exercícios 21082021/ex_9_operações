@@ -1,0 +1,47 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		caracter continua
+
+		faca
+		{
+			limpa ()
+			inteiro n1, n2, dividir, multiplicar, somar, subtrair
+
+			escreva("**Operações de divisão, multiplicação, soma e subtração**\n")
+
+			escreva("\nInforme o primeiro número: ")
+			leia(n1)
+
+			escreva("\nInforme o segundo número: ")
+			leia(n2)
+
+			
+			
+			dividir = (n1 / n2)
+			escreva ("\nA divisão dos valores é: ", dividir)
+
+			multiplicar = (n1 * n2)
+			escreva ("\nA multiplicação dos valores é: ", multiplicar)
+
+			somar = (n1 + n2)
+			escreva ("\nA soma dos valores é: ", somar)
+
+			subtrair = (n1 - n2)
+			escreva ("\nA subtração dos valores é: ", subtrair)
+
+			
+			
+//perguntar se continua a execução do programa
+			escreva("\nContinua a Execução do Programa? ")
+			leia (continua)
+
+		}
+		enquanto (continua == 'S' ou continua == 's')
+		escreva("\nO programa foi finalizado!!!")
+	}
+}
+
+

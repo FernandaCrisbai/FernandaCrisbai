@@ -1,0 +1,18 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real quilometros, milhas = 0.0
+		
+		escreva("*** Transforme a distância de milhas em quilômetros ***\n")
+		
+		escreva ("Informe a medida em milhas: ")
+		leia (milhas)
+		
+	// calcular quantos quilômetros equivalem as milhas informadas.
+		quilometros = milhas * 1.609
+		escreva (" Equivalente em quilômetros: ", quilometros)
+		
+	}
+}

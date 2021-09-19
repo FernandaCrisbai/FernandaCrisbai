@@ -1,0 +1,44 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		caracter continua
+
+		faca
+		{
+			limpa ()
+			inteiro n1, n2
+
+			escreva ("***Maior de dois números!***\n")
+
+
+			escreva ("\nInforme o primeiro número: ")
+			leia (n1)
+
+			escreva ("\nInforme o segundo número: ")
+			leia (n2)
+
+			se (n1 > n2)
+
+				{
+					escreva ("\nO primeiro número é o maior!")
+				}
+			senao
+				{
+					escreva ("\nO segundo número é o maior!\n")
+				}
+			
+			
+			
+//perguntar se continua a execução do programa
+			escreva("\nContinua a Execução do Programa? ")
+			leia (continua)
+
+		}
+		enquanto (continua == 'S' ou continua == 's')
+		escreva("\nO programa foi finalizado!!!")
+	}
+}
+
+

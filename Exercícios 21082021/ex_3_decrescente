@@ -1,0 +1,65 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		caracter continua
+
+		faca
+		{
+			limpa ()
+			inteiro n1, n2, n3, temp
+
+						
+			escreva ("*** Ordem decrescente***\n\n")
+
+			escreva("Digite o primeiro número: ")
+			leia (n1)
+			
+			escreva("\nDigite o segundo número: ")
+			leia (n2)
+
+			escreva("\nDigite o terceiro número: ")
+			leia (n3)
+
+
+			se (n1 > n2)
+				{
+					temp = n1
+					n1 = n2
+					n2 = temp
+				}
+			se (n2 > n1)
+				{
+					temp = n2
+					n2 = n1
+					n1 = temp
+				}
+			se (n3 > n1)
+				{
+					temp = n3
+					n3 = n1
+					n1 = temp
+				}
+			se (n3 > n2)
+				{
+					temp = n3
+					n3 = n2
+					n2 = temp
+				}
+				
+
+			escreva ("\nO resultado é: ", n1, "-", n2, "-",  n3)
+						
+			
+//perguntar se continua a execução do programa
+			escreva("\nContinua a Execução do Programa? ")
+			leia (continua)
+
+		}
+		enquanto (continua == 'S' ou continua == 's')
+		escreva("\nO programa foi finalizado!!!")
+	}
+}
+
+

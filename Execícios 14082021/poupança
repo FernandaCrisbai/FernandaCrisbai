@@ -1,0 +1,17 @@
+programa
+{
+	funcao inicio()
+	{
+		real deposito, rendimento = 0.05
+		
+		escreva("**Rendimento na poupança com um mês de aplicação**\n")
+		
+		escreva("\nInforme o valor a ser depositado:")
+		leia (deposito)
+
+		rendimento = deposito*rendimento+deposito
+
+		escreva("\nValor após um mês de aplicação será: ", rendimento)
+					
+	}
+}

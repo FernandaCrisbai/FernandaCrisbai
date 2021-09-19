@@ -1,0 +1,65 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		caracter continua
+
+		faca
+		{
+			limpa ()
+			inteiro n1, n2, n3
+
+			escreva("**Mostre o maior e menor número**\n")
+
+			escreva("\nInforme o primeiro número: ")
+			leia(n1)
+
+			escreva("\nInforme o segundo número: ")
+			leia(n2)
+
+			escreva("\nInforme o terceiro número: ")
+			leia(n3)
+
+			
+
+			se (n1 < n2 e n1 < n3)
+			{
+				escreva("\nO menor número é: ", n1)		
+			}
+			se (n1 > n2 e n1 > n3)
+			{
+				escreva("\nO maior número é: ", n1)		
+			}
+
+			
+			se (n2 < n1 e n2 < n3)
+			{
+				escreva("\nO menor número é: ", n2)		
+			}
+			se (n2 > n2 e n2 > n3)
+			{
+				escreva("\nO maior número é: ", n2)		
+			}
+
+
+			se (n3 < n1 e n3 < n2)
+			{
+				escreva("\nO menor número é: ", n3)		
+			}
+			se (n3 > n1 e n3 > n2)
+			{
+				escreva("\nO maior número é: ", n3)		
+			}
+			
+//perguntar se continua a execução do programa
+			escreva("\nContinua a Execução do Programa? ")
+			leia (continua)
+
+		}
+		enquanto (continua == 'S' ou continua == 's')
+		escreva("\nO programa foi finalizado!!!")
+	}
+}
+
+

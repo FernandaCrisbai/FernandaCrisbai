@@ -1,0 +1,36 @@
+programa
+{
+	inclua biblioteca Matematica --> mat
+	funcao inicio()
+	{
+		caracter continua
+
+		faca
+		{
+			limpa ()
+			real peso, altura, imc
+
+			escreva("**Calcular o IMC de um adulto**\n")
+
+			escreva("\nInforme o peso: ")
+			leia(peso)
+
+			escreva("\nInforme a altura: ")
+			leia(altura)
+
+			imc = peso / (altura * altura)
+			escreva("\nO seu IMC é: ",mat.arredondar(imc, 3))
+			
+			
+//perguntar se continua a execução do programa
+			escreva("\nContinua a Execução do Programa? ")
+			
+			leia (continua)
+
+		}
+		enquanto (continua == 'S' ou continua == 's')
+		escreva("\nO programa foi finalizado!!!")
+	}
+}
+
+

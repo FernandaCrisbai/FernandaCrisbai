@@ -1,0 +1,38 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		caracter continua
+
+		faca
+		{
+			limpa ()
+			inteiro numero
+
+			escreva("**Mostre se o valor é par ou impar**\n")
+
+			escreva("\nInforme um número inteiro: ")
+			leia(numero)
+
+			se (numero % 2 == 0)
+			{
+				escreva ("\nO número informado é PAR!")
+			}
+			senao
+			{
+				escreva ("\nO número informado é IMPAR!")
+			}
+			
+			
+//perguntar se continua a execução do programa
+			escreva("\n\nContinua a Execução do Programa? ")
+			leia (continua)
+
+		}
+		enquanto (continua == 'S' ou continua == 's')
+		escreva("\nO programa foi finalizado!!!")
+	}
+}
+
+

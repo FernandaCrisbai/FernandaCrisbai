@@ -1,0 +1,139 @@
+programa
+{
+	inclua biblioteca Matematica --> m
+	inclua biblioteca Util --> u
+	
+	funcao inicio()
+	{
+		caracter continua
+		inteiro opcao = 0 
+
+		faca
+		{
+			limpa ()
+			inteiro mes = 0
+			real salario_bruto, salario_liquido, primeiro, segundo, total_emprestimo, total_desconto
+	          inteiro vale_transporte = 300 
+	          real peso, peso1, peso2
+						
+			escreva("* * *  Seleção de Programas a serem executados * * *")
+
+			escreva("\n1) Mês do ano")
+			escreva("\n2) Salário")
+			escreva("\n3) Novo peso")
+
+			escreva("\nSelecione a opção: ")
+			leia(opcao)
+
+
+			escolha (opcao)
+				{
+					caso 1:
+					escreva("***Descubra o mês do ano***\n ")
+			
+
+					escreva("\nInforme de 1 a 12 para saber o mês do ano: ")
+					leia(mes)
+
+					escolha(mes)
+					{
+					caso 1:
+					escreva("Este é o mês de Janeiro!")
+					pare
+					caso 2: 
+					escreva("Este é o mês de Fevereiro!")
+					pare
+					caso 3: 
+					escreva("Este é o mês de Março!")
+					pare
+					caso 4:
+					escreva("Este é o mês de Abril")
+					pare
+					caso 5: 
+					escreva("Este é o mês de Maio")
+					pare
+					caso 6: 
+					escreva("Este é o mês de Junho!")
+					pare	
+					caso 7: 
+					escreva("Este é o mês de Julho")
+					pare	
+					caso 8: 
+					escreva("Este é o mês de Agosto")
+					pare		
+					caso 9: 
+					escreva("Este é o mês de Setembro")
+					pare		
+					caso 10: 
+					escreva("Este é o mês de Outubro")
+					pare	
+					caso 11: 
+					escreva("Este é o mês de Novembro")
+					pare	
+					caso 12: 
+					escreva("Este é o mês de Dezembro")
+					pare	
+					caso contrario:
+					escreva("Opção Inválida!")
+					}
+
+					pare
+
+					caso 2: 
+					escreva("\n* * * Programa que calcule o salário e seus emprestimos* * *")
+	          
+	          		escreva ("\n\nInforme o salario bruto: ")
+		    			leia (salario_bruto)
+		     	
+		    			primeiro = (salario_bruto * 10) / 100 
+		    			escreva ("\nDesconto do 1º emprestimo...: ", primeiro)
+		     
+		    			segundo = (salario_bruto - primeiro) * 20 / 100
+		    
+
+				     se (segundo > vale_transporte)
+					{	
+					segundo = (salario_bruto - primeiro) * 15 / 100
+					escreva ("\nDesconto do 2º emprestimo....: ", segundo)
+				 	}
+			
+
+
+					total_emprestimo = primeiro + segundo
+					total_desconto = total_emprestimo + vale_transporte
+			
+	     
+		 			salario_liquido = salario_bruto - total_desconto	     
+		    			 escreva ("\nSalario Liquido.......: ", salario_liquido)
+
+					pare
+
+					caso 3: 
+					escreva("\n**Calcular o peso caso engorde e caso emagreça**\n")
+
+					escreva("\nInforme seu peso: ")
+					leia(peso)
+			
+					peso1 = peso + (peso * 10) / 100
+					escreva("\n\nCaso engorde 10% seu peso será: ", peso1)
+			
+					peso2 = peso - (peso * 20) /100
+					escreva("\n\nCaso emagreça 20% seu peso será: ", peso2)
+
+					
+				}
+				
+				
+
+			
+//perguntar se continua a execução do programa
+			escreva("\nContinua a Execução do Programa? ")
+			leia (continua)
+
+		}
+		enquanto (continua == 'S' ou continua == 's')
+		escreva("\nO programa foi finalizado!!!")
+	}
+
+	
+}

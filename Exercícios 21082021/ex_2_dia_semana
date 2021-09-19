@@ -1,0 +1,54 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		caracter continua
+
+		faca
+		{
+			limpa ()
+			inteiro dia
+			escreva("***Descubra o dia da semana***\n ")
+			
+
+			escreva("\nInforme o dia que deseja saber: ")
+			leia(dia)
+
+			escolha(dia)
+			{
+				caso 1:
+					escreva("\nHoje é Domingo!")
+					pare
+				caso 2: 
+					escreva("\nHoje é Segunda-feira!")
+					pare
+				caso 3: 
+					escreva("\nHoje é Terça-feira!")
+					pare
+				caso 4:
+					escreva("\nHoje é Quarta-feira!")
+					pare
+				caso 5: 
+					escreva("\nHoje é Quinta-feira!")
+					pare
+				caso 6: 
+					escreva("\nHoje é Sexta-feira!")
+					pare	
+				caso 7: 
+					escreva("\nHoje é Sábado!")
+					pare	
+				caso contrario:
+					escreva("\nOpção Inválida!")
+			}
+			
+
+//perguntar se continua a execução do programa
+			escreva("\nContinua a Execução do Programa? ")
+			leia (continua)
+
+		}
+		enquanto (continua == 'S' ou continua == 's')
+		escreva("\nO programa foi finalizado!!!")
+	}
+}

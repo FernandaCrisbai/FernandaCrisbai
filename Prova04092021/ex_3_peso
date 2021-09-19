@@ -1,0 +1,36 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		caracter continua
+		
+
+		faca
+		{
+			limpa ()
+			real peso, peso1, peso2
+			
+
+			escreva("**Calcular o peso caso engorde e caso emagreça**\n")
+
+			escreva("\nInforme seu peso: ")
+			leia(peso)
+			
+			peso1 = peso + (peso * 10) / 100
+			escreva("\n\nCaso engorde 10% seu peso será: ", peso1)
+			
+			peso2 = peso - (peso * 20) /100
+			escreva("\n\nCaso emagreça 20% seu peso será: ", peso2)
+			
+			
+			
+//perguntar se continua a execução do programa
+			escreva("\n\nContinua a Execução do Programa? ")
+			leia (continua)
+
+		}
+		enquanto (continua == 'S' ou continua == 's')
+		escreva("\nO programa foi finalizado!!!")
+	}
+}

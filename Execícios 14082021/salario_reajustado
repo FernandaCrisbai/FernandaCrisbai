@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real salario, ajuste = 0.15
+
+		escreva("*** Calcular salário com reajuste ***\n\n" )
+		
+		escreva ("Informe o valor do salário: ")
+		leia (salario)
+
+// calcular o salário com reajuste de 15%
+
+		ajuste = salario*ajuste+salario
+		escreva("\nO salário reajustado será: ", ajuste)
+		
+		
+	}
+}

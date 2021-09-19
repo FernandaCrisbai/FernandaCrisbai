@@ -1,0 +1,36 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		caracter continua
+
+		faca
+		{
+			limpa ()
+			real numero
+
+			escreva("**Mostre se o valor é positivo ou negativo**")
+
+			escreva("\nInforme um valor: ")
+			leia(numero)
+
+			se (numero > 0)
+			{
+				escreva ("\nO número informado é POSITIVO!")
+			}
+			senao
+			{
+				escreva ("\nO número informado é NEGATIVO!")
+			}
+			
+			
+//perguntar se continua a execução do programa
+			escreva("\nContinua a Execução do Programa? ")
+			leia (continua)
+
+		}
+		enquanto (continua == 'S' ou continua == 's')
+		escreva("\nO programa foi finalizado!!!")
+	}
+}

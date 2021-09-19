@@ -1,0 +1,50 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	     caracter continua
+	     real salario_bruto, salario_liquido, primeiro, segundo, total_emprestimo, total_desconto
+	     inteiro vale_transporte = 300 
+
+	    faca 
+	      {
+	          limpa()
+
+	          escreva("* * * Programa que calcule o salário e seus emprestimos* * *")
+	          
+	          escreva ("\n\nInforme o salario bruto: ")
+		     leia (salario_bruto)
+		     
+		     primeiro = (salario_bruto * 10) / 100 
+		     escreva ("\nDesconto do 1º emprestimo...: ", primeiro)
+		     
+		    	segundo = (salario_bruto - primeiro) * 20 / 100
+		    
+
+			se (segundo > vale_transporte)
+			{	
+				 segundo = (salario_bruto - primeiro) * 15 / 100
+				 escreva ("\nDesconto do 2º emprestimo....: ", segundo)
+				 
+			}
+			
+
+
+			total_emprestimo = primeiro + segundo
+			total_desconto = total_emprestimo + vale_transporte
+			
+	     
+		 	salario_liquido = salario_bruto - total_desconto	     
+		     escreva ("\nSalario Liquido.......: ", salario_liquido)
+		     
+		     		          
+//perguntar se continua a execução do programa
+			escreva("\nContinua a Execução do Programa? ")
+			leia (continua)
+		     	     
+	      }
+	    enquanto (continua == 'S' ou continua == 's')
+		escreva("\nO programa foi finalizado!!!")
+	}
+}

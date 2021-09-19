@@ -1,0 +1,37 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		caracter continua
+
+		faca
+		{
+			limpa ()
+			real a, b, c, media
+
+			escreva("**Mostre a média aritmética**\n")
+
+			escreva("\nInforme o primeiro número: ")
+			leia(a)
+
+			escreva("\nInforme o segundo número: ")
+			leia(b)
+
+			escreva("\nInforme o terceiro número: ")
+			leia(c)
+
+			
+			media = (a + b + c)/ 3
+			escreva ("\nA média dos valores é: ", media)
+			
+			
+//perguntar se continua a execução do programa
+			escreva("\nContinua a Execução do Programa? ")
+			leia (continua)
+
+		}
+		enquanto (continua == 'S' ou continua == 's')
+		escreva("\nO programa foi finalizado!!!")
+	}
+}
